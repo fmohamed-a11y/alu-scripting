@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Prints the title of the forst 10 hot posts of a subreddit."""
+"""Prints the title of the first 10 hot posts of a subreddit."""
 import requests
 
 
@@ -15,5 +15,4 @@ def top_ten(subreddit):
         for post in posts[:10]:
             print(post.get("data").get("title"))
     except Exception:
-        print(None)`/bin/bash: line 1: Prints the titles of the first 10 hot posts of a subreddit.: command not found
-
+        print(None)
